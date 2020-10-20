@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+body {
+    background-color: rgba(250,250,250);
+}
+
+header {
+    display: flex;
+    background-color: white;
+}
+
+.logo-header {
+    width: 30%;
+}
+
+.search {
+    width: 30%;
+}
