@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+main{
+    margin-top: 75px;
+    padding: 0px 200px;
+}
+/*Menu*/
+nav{
+    padding: 0px 200px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+nav img{
+    width: 100px;
+    cursor: pointer;
+}
+nav input{
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    width: 215px;
+}
+nav #icones i{
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.icone {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  outline: none;
+  line-height: 25px;
+  color: #515152;
+  z-index: 1;
+}
+.inputIcones {
+  position: relative;
+
+}
+/*Seção Perfil*/
+#perfil {
+    display: flex;
+    height: 200px;
+    margin-top: 25px;
+}
+#perfil #perfil-foto{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#perfil #perfil-foto div{
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#perfil #perfil-foto div img{
+    border-radius: 50%;
+}
+
+#perfil #perfil-infomacoes{
+    width: 70%;
+    padding-left: 25px;
+    height: auto;
+}
+#perfil #perfil-infomacoes #perfil-ig{
+    display: flex
+}
+#perfil-infomacoes #perfil-ig h2{
+    font-weight: 200;
+}
+#perfil-infomacoes #perfil-ig button{
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 400;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+#perfil-infomacoes #perfil-ig i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.perfil-interacoes{
+    width: 100%;
+    margin-top: 2.3rem;
+    display: block;
+    overflow: hidden;
+}
+.perfil-interacoes li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.perfil-interacoes li:last-of-type {
+    margin-right: 0;
+}
+.perfil-quantidade{
+    font-weight: 600;
+    font-size: 16px;
+}
+.perfil-bio{
+    margin-top: 20px;
+    clear: both;
+    width: 90%;
+}
+.perfil-bio .perfil-nome{
+    font-weight: 600;
+}
+.perfil-bio p a {
+    color: rgb(20, 2, 120);
+    font-weight: 600;
+}
+#destaques{
+    width: 100%;
+    padding: 120px 120px 0;
+    display: flex;
+}
+.destaque{
+    cursor: pointer;
+    margin-right: 50px ;
+    text-align: center;
+}
+.destaque .destaque-foto{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -51%);
+}
+#destaques .destaque p{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+#destaques .destaque .destaque-borda{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+#post hr{
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+#post #flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#post ul{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+    padding: 15px 0px;
+}
+#post ul li{
+    display: inline;
+    padding: 0px 20px;
+}
+#post ul li i{
+    color: #ccc;
+}
+#post ul a{
+    color: rgb(175, 175, 175);
+    padding: 17px 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#post ul .ativo{
+    border-top: 1px solid #262626;
+    color: rgb(75, 74, 74);
+}
+#post #flexbox .post-publicacao {
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin: 10px;
+    height: 300px;
+    background-color:blue;
+    position: relative;
+}
+#post #flexbox .post-publicacao img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.post-publicacao:hover .reacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.reacoes {
+    display: none;
+    color: #fff;
+}
+.reacoes div i{
+    font-size: 18px;
+}
+.reacoes div{
+    margin: 0px 10px;
+    font-weight: 600;
+}
+/*modal*/
+.modal-janela {
+  position: fixed;
+  background-color: rgba(32, 32, 32, 0.8);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.modal-janela:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-janela #espaco-modal{
+  width: 900px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+}
+.modal-janela #espaco-modal article{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.modal-janela #espaco-modal #secaoImage{
+    width: 65%;
+    background-color: blue;
+}
+.modal-janela #secaoImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal-janela #secaoInteracao{
+    width: 35%;
+    position: relative;
+}
+.modal-janela #secaoInteracao #interacao-header{
+    width: 100%;
+    padding: 20px 20px;
+    box-shadow: 0px 1px 0px rgba(155, 155, 155, 0.719);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerFlex{
+    display: flex;
+    align-items: center;
+}
+.headerFlex p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#header-perfil{
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+#header-perfil img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#footer-icones{
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 20px;
+    box-shadow: 0px -1px 0px rgba(155, 155, 155, 0.719);
+}
+#footer-icones i{
+    font-size: 24px;
+}
+#footer-icones div i{
+    margin-right: 10px;
+}
+.modal-janela #secaoInteracao #interacao-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0px;
+    box-shadow: 0px -1px 0px rgba(155, 155, 155, 0.719);
+}
+#secaoInteracao #interacao-footer input{
+    border: 0;
+    height: 35px;
+    padding: 0px 15px;
+    width: 70%;
+}
+#secaoInteracao #interacao-footer button{
+    width: 25%;
+    height: 35px;
+    border: 0;
+    background-color: #fff;
+    color: rgb(117, 163, 250);
+    cursor: pointer;
+}
+
+.modal-janela h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+.modal-fechar {
+  color: #fff;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  font-size: 26px;
+  text-decoration: none;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: auto;
+    padding: 30px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+footer li a{
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(20, 2, 120);
+}
+footer span{
+    color: rgb(173, 173, 173);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 40rem) {
+    .perfil-interacoes {
+        float: none;
+        width: auto;
+    }
+    .perfil-interacoes {
+        flex-basis: 100%;
+    }
+    .perfil-interacoes {
+        order: 1;
+        margin-top: 1.5rem;
+    }
+    .perfil-interacoes ul {
+        display: flex;
+        text-align: center;
+        padding: 1.2rem 0;
+        border-top: 0.1rem solid #dadada;
+        border-bottom: 0.1rem solid #dadada;
+    }
+    .perfil-interacoes li {
+        font-size: 1.4rem;
+        flex: 1;
+        margin: 0;
+    }
+    .perfil-quantidade {
+        display: block;
+    }
+}
+@media screen and (max-width: 75rem) {
+    nav{
+        padding: 0px 20px;
+    }
+    main{
+        padding: 0px 20px;
+    }
+    footer{
+        padding: 0px 20px;
+    }
+}
